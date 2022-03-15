@@ -9,7 +9,6 @@ https://github.com/cayo-rodrigues/capstone-m3
 Essa API é usada para guardar informações sobre usuários e prestadores de serviços que se registram em nosso site.
 
 ## **Importante**
--------------------------
 
 Em todas as requisições **`GET`**, é possível passar `query parameters` para otimizar a busca. Para saber como usar esses parâmetros na `URL` de forma correta, consulte a [documentação do json-server](https://github.com/typicode/json-server#table-of-contents). Fazer isso vai melhorar muito sua exeriência. Esta documentação não cobre todas as possibilidades de consulta na API.
 
