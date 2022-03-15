@@ -10,9 +10,11 @@ Essa API é usada para guardar informações sobre usuários e prestadores de se
 
 ## **Importante**
 
-Em todas as requisições **`GET`**, é possível passar `query parameters` para otimizar a busca. Para saber como usar esses parâmetros na `URL` de forma correta, consulte a [documentação do json-server](https://github.com/typicode/json-server#table-of-contents). Fazer isso vai melhorar muito sua exeriência. Esta documentação não cobre todas as possibilidades de consulta na API.
+- Se estiver usando o `Insomnia`, você pode importar [este arquivo JSON](https://drive.google.com/file/d/1OfsE-MCKlQgW32CNaB1urVKFiu-OSTVk/view?usp=sharing) que já vem com várias requisições úteis! Pode facilitar sua vida.
 
-Na documentação do `json-server`, você encontrará features úteis, como **paginação**, **filtros**, **ordenação**, **relacionamento de dados** e **busca por texto**.
+- Em todas as requisições **`GET`**, é possível passar `query parameters` para otimizar a busca. Para saber como usar esses parâmetros na `URL` de forma correta, consulte a [documentação do json-server](https://github.com/typicode/json-server#table-of-contents). Fazer isso vai melhorar muito sua exeriência. Esta documentação não cobre todas as possibilidades de consulta na API.
+
+- Na documentação do `json-server`, você encontrará features úteis, como **paginação**, **filtros**, **ordenação**, **relacionamento de dados** e **busca por texto**.
 
 
 ------------------------
@@ -30,7 +32,7 @@ headers: {
 }
 ```
 
-Se estiver usando o `insomnia`, lembre-se de que as aspas não fazem parte do `token`, e não se esqueça de colocar a palavra `Bearer` + um espaço em branco antes de colar o `token`. Também é possível apresentar o `token` selecionando a opção **`Bearer Token`** através da aba **`Auth`**.
+Se estiver usando o `Insomnia`, lembre-se de que as aspas não fazem parte do `token`, e não se esqueça de colocar a palavra `Bearer` + um espaço em branco antes de colar o `token`. Também é possível apresentar o `token` selecionando a opção **`Bearer Token`** através da aba **`Auth`**.
 
 
 ------------------------
