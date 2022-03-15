@@ -39,7 +39,7 @@ Se estiver usando o `insomnia`, lembre-se de que as aspas não fazem parte do `t
 
 ## URL Base
 
-### http://urlbase.herokuapp.com
+### https://proworking-fake-api.herokuapp.com
 
 ------------------------
 
@@ -125,7 +125,7 @@ Retorna todos os prestadores de serviço cadastrados. Não requer um corpo de re
 	{
 		"userId": 2,
 		"occupation_area": "odontologia",
-		"summary": "adestro dentes encavalados",
+		"summary": "bucéfalo de oferendas não perquires formação odôntica",
 		"whatsapp": "(99) 12345-6789",
 		"id": 2
 	}
@@ -178,7 +178,7 @@ Retorna um array com todos os prestadore de serviço, incluindo suas informaçõ
 	{
 		"userId": 2,
 		"occupation_area": "odontologia",
-		"summary": "adestro dentes encavalados",
+		"summary": "bucéfalo de oferendas não perquires formação odôntica",
 		"whatsapp": "(99) 12345-6789",
 		"id": 2,
 		"user": {
@@ -275,7 +275,7 @@ Cadastra um novo prestador de serviço. É necessário autenticação pois esse 
 {
 	"userId": 2,
 	"occupation_area": "odontologia",
-	"summary": "adestro dentes encavalados",
+	"summary": "bucéfalo de oferendas não perquires formação odôntica",
 	"whatsapp": "(99) 12345-6789"
 }
 ```
@@ -288,7 +288,7 @@ Cadastra um novo prestador de serviço. É necessário autenticação pois esse 
 {
 	"userId": 2,
 	"occupation_area": "odontologia",
-	"summary": "adestro dentes encavalados",
+	"summary": "bucéfalo de oferendas não perquires formação odôntica",
 	"whatsapp": "(99) 12345-6789",
 	"id": 2
 }
