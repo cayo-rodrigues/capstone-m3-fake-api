@@ -26,22 +26,65 @@
       "is_active": true,
       "is_admin": false,
       "id": 3
+    },
+    {
+      "email": "super@chock.chock",
+      "password": "$2a$10$pGUBjkKxR10tr9Dg5UNAgei2ofhYd20WcJB76Wrd2s8K9qFSAD6k.",
+      "name": "Super Chock",
+      "is_worker": true,
+      "is_active": true,
+      "is_admin": false,
+      "id": 4
     }
   ],
   "workers": [
     {
       "userId": 1,
-      "occupation_area": "soldador",
+      "occupation_areas": [
+        "soldador"
+      ],
       "summary": "soldo coisas, mas nunca fui soldado",
       "whatsapp": "(31) 99944-5697",
       "id": 1
     },
     {
       "userId": 2,
-      "occupation_area": "odontologia",
+      "occupation_areas": [
+        "odontologia"
+      ],
       "summary": "bucéfalo de oferendas não perquires formação odôntica",
       "whatsapp": "(99) 12345-6789",
       "id": 2
+    },
+    {
+      "userId": 4,
+      "occupation_areas": [
+        "educação",
+        "super herói"
+      ],
+      "summary": "todos pensam que sou apenas o fundador de uma grande escola de programação, mas secretamente dou chock no seu sistema",
+      "whatsapp": "(11) 99990-9991",
+      "id": 3
+    }
+  ],
+  "ratings": [
+    {
+      "stars": 5,
+      "workerId": 1,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "stars": 5,
+      "workerId": 1,
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "stars": 4,
+      "workerId": 2,
+      "userId": 4,
+      "id": 3
     }
   ]
 }
