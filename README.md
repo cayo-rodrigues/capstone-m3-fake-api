@@ -262,6 +262,50 @@ Loga um **usuário** na aplicação. Requer um corpo de requisição em formato 
 ```
 
 
+### **`GET /ratings`**
+
+Retorna todos os ratings, com referências para os usuários que os fizeram e também os trabalhadores que os receberam. Não possui corpo de requisição.
+
+
+### ***Response***
+
+### **200 OK**
+
+```json
+[
+	{
+		"stars": 5,
+		"workerId": 1,
+		"userId": 2,
+		"id": 1
+	},
+	{
+		"stars": 5,
+		"workerId": 1,
+		"userId": 4,
+		"id": 2
+	},
+	{
+		"stars": 4,
+		"workerId": 2,
+		"userId": 4,
+		"id": 3
+	}
+]
+```
+
+
+### **`GET /ratings?workerId=:id`**
+
+Essa requisição pode ser usada para retornar um array com todos os ratings relacionados a um prestador de serviço. Ela pode ser útil para calcular quantos ratings ele tem ao todo e então fazer uma média.
+
+### **`GET /ratings?workerId=:id&userId=:id`**
+
+Essa requisição pode ser usada para verificar se um usuário já fez algum rating a respeito de determinado trabalhador. Pode ser útil caso ele queira alterar a nota que deu para um prestador de serviço.
+
+As duas requisições acima retornam um array, no mesmo formato já demonstrado.
+
+
 -----------------------------------
 
 ## **Private Endpoints (Requer token de autorização)**
@@ -348,5 +392,58 @@ Atualiza um ou mais campos de um usuário. O corpo da requisição deve estar no
 	"is_active": true,
 	"is_admin": false,
 	"id": 2
+}
+```
+
+### **`POST /ratings`**
+
+Faz um novo rating. Exige um corpo de resposta em formato `JSON` passando um `workerId` (para quem aquela nota está sendo dada), um `userId` (quem está dando a nota) e `stars` (no máximo 5).
+
+### ***Request***
+
+```json
+{
+	"stars": 5,
+	"workerId": 2,
+	"userId": 4
+}
+```
+
+### ***Response***
+
+### **201 Created**
+
+```json
+{
+	"stars": 5,
+	"workerId": 2,
+	"userId": 4,
+	"id": 3
+}
+```
+
+
+### **`PATCH /ratings/:id`**
+
+Atualiza um rating. Esta rota é útil quando um usuário já deu uma nota (fez o `POST`) mas agora quer alterá-la. Usar essa rota **evita a duplicidade**, então é muito importante que nunca sejam feitas duas requisições `POST` para o mesmo trabalhador. Uma dica para poder usar esta rota, seria fazer uma requisição `GET` passando ambos `workerId` e `userId` como `query params`, e então usar o `id` retornado para poder fazer uso da requisição `PATCH` em questão.
+
+### ***Request***
+
+```json
+{
+	"stars": 4
+}
+```
+
+### ***Response***
+
+### **200 OK**
+
+```json
+{
+	"stars": 4,
+	"workerId": 2,
+	"userId": 4,
+	"id": 3
 }
 ```
