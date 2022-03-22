@@ -40,28 +40,24 @@
   "workers": [
     {
       "userId": 1,
-      "occupation_areas": [
-        "soldador"
-      ],
+      "occupation_areas": ["soldador"],
+      "cities": ["MG - Piranguinho"],
       "summary": "soldo coisas, mas nunca fui soldado",
       "whatsapp": "(31) 99944-5697",
       "id": 1
     },
     {
       "userId": 2,
-      "occupation_areas": [
-        "odontologia"
-      ],
+      "occupation_areas": ["odontologia"],
+      "cities": ["MG - Piranguinho"],
       "summary": "bucéfalo de oferendas não perquires formação odôntica",
       "whatsapp": "(99) 12345-6789",
       "id": 2
     },
     {
       "userId": 4,
-      "occupation_areas": [
-        "educação",
-        "super herói"
-      ],
+      "occupation_areas": ["educação", "super herói"],
+      "cities": ["MG - Piranguinho"],
       "summary": "todos pensam que sou apenas o fundador de uma grande escola de programação, mas secretamente dou chock no seu sistema",
       "whatsapp": "(11) 99990-9991",
       "id": 3
