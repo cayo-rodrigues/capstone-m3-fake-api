@@ -5,7 +5,6 @@
       "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
       "name": "Kenzinho",
       "id": 1,
-      "is_worker": true,
       "is_active": true,
       "is_admin": false
     },
@@ -13,7 +12,6 @@
       "email": "cavalo@cavalo.com.com.com.com.com",
       "password": "$2a$10$HZT36TpM/cyQ5.OROcjUe.0flTLoulBHUb0gKwBAaH1VzgDNgxTF6",
       "name": "Cavalo",
-      "is_worker": true,
       "is_active": true,
       "is_admin": false,
       "id": 2
@@ -22,7 +20,6 @@
       "email": "user@user.user",
       "password": "$2a$10$BE992NyAfUkwQ28bx4l.P.SddNX.1BG8DlAwyeMno2qcSo1sBU.hK",
       "name": "User",
-      "is_worker": false,
       "is_active": true,
       "is_admin": false,
       "id": 3
@@ -31,36 +28,474 @@
       "email": "super@chock.chock",
       "password": "$2a$10$pGUBjkKxR10tr9Dg5UNAgei2ofhYd20WcJB76Wrd2s8K9qFSAD6k.",
       "name": "Super Chock",
-      "is_worker": true,
       "is_active": true,
       "is_admin": false,
       "id": 4
+    },
+    {
+      "email": "cirilao@ciri.lilo",
+      "password": "$2a$10$7lff4Lz2Q107iSBMrzmmMOmkm7rMWFq2X0r9ZW/avqhQgcgfQYT5K",
+      "name": "Cirilão",
+      "is_active": true,
+      "is_admin": false,
+      "id": 5
+    },
+    {
+      "email": "parry@orni.rinco",
+      "password": "$2a$10$Ns4GY/8755g/ye./EFLtIucgfzo7HRCTX1maQUmdTJAWRqk5a3She",
+      "name": "Perry",
+      "is_active": true,
+      "is_admin": false,
+      "id": 6
+    },
+    {
+      "email": "buzz@light.year",
+      "password": "$2a$10$6cAL169ENm489B3k5BVoCet12kYLAVxfWuco7o582H/I9ENVpVPGK",
+      "name": "Buzz Lightyear",
+      "is_active": true,
+      "is_admin": false,
+      "id": 7
+    },
+    {
+      "email": "joao@jao.frango",
+      "password": "$2a$10$OXoMes6/wvc1Wcrm.2wYmuO5/P1twHk.srHRNXhurTJta6zywDnh6",
+      "name": "João Frango",
+      "is_active": true,
+      "is_admin": false,
+      "id": 8
+    },
+    {
+      "email": "maurio@mau.ricio",
+      "password": "$2a$10$on9KCmSCIMnDd6D6H14Nb.fc6xZh32ZQmyIY3ybiB4zGIaYJBEHAC",
+      "name": "Mauricio",
+      "is_active": true,
+      "is_admin": false,
+      "id": 9
+    },
+    {
+      "email": "ellon@mus.ky",
+      "password": "$2a$10$aFv487SzVnavECn3eZFhquA2ht1/p67AbCdhySXyApx7MlI5j75Cm",
+      "name": "Ellon Musk",
+      "is_active": true,
+      "is_admin": false,
+      "id": 10
+    },
+    {
+      "email": "rodrigo@gmail.com",
+      "password": "$2a$10$4pwVZwdGFhDo26isW17YAe8zMYZtHRPn3dhibdtj2FBQ6C8I.MkvW",
+      "name": "Rodrigo Pereira",
+      "is_active": true,
+      "is_admin": false,
+      "id": 11
+    },
+    {
+      "email": "kay.rodrigu3s@gmail.com",
+      "password": "$2a$10$mP.he3mHlsPSGzEnMLhKLuCfo/.XQ.VOTe54.9IgJN0zQJ.0Soi7y",
+      "name": "José Aldo",
+      "is_active": true,
+      "is_admin": false,
+      "id": 12
+    },
+    {
+      "email": "luizmotta@mail.com",
+      "password": "$2a$10$YRnn2wvd/fIFPGsoAcmZouXZT8/4hu1I6irtJOLYuh3wWCNUcXyR.",
+      "name": "Luiz Antônio da Motta",
+      "is_active": true,
+      "is_admin": false,
+      "id": 13
+    },
+    {
+      "email": "cius@ovini.com",
+      "password": "$2a$10$4F9LBqXrMau.0Xo0T.twROOzNxfqsN1LA9w6wwAu8v9nUkf1MfvDq",
+      "name": "Vinicius Rocha",
+      "is_active": true,
+      "is_admin": false,
+      "id": 14
+    },
+    {
+      "email": "mari@rosar.io",
+      "password": "$2a$10$RutWZTMm2Lz2VNbr7C8km.9PWtRgsYSdcwYXDTrUkx0WWm1eD6X9O",
+      "name": "Maria do Rosário",
+      "is_active": true,
+      "is_admin": false,
+      "id": 15
+    },
+    {
+      "email": "am@an.da",
+      "password": "$2a$10$YbDLJddEvYsiA6qkLwcCxuT.YFJqGoOhxbiY78jj.ewxCfFmWCw1K",
+      "name": "Amanda Barcelos",
+      "is_active": true,
+      "is_admin": false,
+      "id": 16
+    },
+    {
+      "email": "pedro@pedro.pedro",
+      "password": "$2a$10$lYoJVxnG9DonPUsimCCztuphgagdtncl9vGb/DnlSU8xPqY7l.xQS",
+      "name": "Pedro Dutra",
+      "is_active": true,
+      "is_admin": false,
+      "id": 17
+    },
+    {
+      "email": "kalinka@nat.asha",
+      "password": "$2a$10$dchlc1vJ6CqY/QQC7wkTpOGfrTUN1aaQDoIkYcRnXlq/iTpXOON0W",
+      "name": "Kalinka Natasha",
+      "is_active": true,
+      "is_admin": false,
+      "id": 18
+    },
+    {
+      "email": "bruno@bru.no",
+      "password": "$2a$10$hS8xHK9YTVjzl5aUQZQTO.j465nyarT.x7P54CB3bLz.db/Z8oJtm",
+      "name": "Bruno Oliveira",
+      "is_active": true,
+      "is_admin": false,
+      "id": 19
     }
   ],
   "workers": [
     {
       "userId": 1,
-      "occupation_areas": ["soldador"],
-      "cities": [{ "state": "MG", "city": "Piranguinho" }],
+      "occupation_areas": [
+        "soldador"
+      ],
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Piranguinho"
+        }
+      ],
       "summary": "soldo coisas, mas nunca fui soldado",
       "whatsapp": "(31) 99944-5697",
+      "is_active": true,
       "id": 1
     },
     {
       "userId": 2,
-      "occupation_areas": ["odontologia"],
-      "cities": [{ "state": "MG", "city": "Piranguinho" }],
+      "occupation_areas": [
+        "odontologia"
+      ],
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Piranguinho"
+        }
+      ],
       "summary": "bucéfalo de oferendas não perquires formação odôntica",
       "whatsapp": "(99) 12345-6789",
+      "is_active": true,
       "id": 2
     },
     {
       "userId": 4,
-      "occupation_areas": ["educação", "super herói"],
-      "cities": [{ "state": "MG", "city": "Piranguinho" }],
+      "occupation_areas": [
+        "educação",
+        "super herói"
+      ],
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Piranguinho"
+        }
+      ],
       "summary": "todos pensam que sou apenas o fundador de uma grande escola de programação, mas secretamente dou chock no seu sistema",
       "whatsapp": "(11) 99990-9991",
+      "is_active": true,
       "id": 3
+    },
+    {
+      "userId": 5,
+      "summary": "",
+      "whatsapp": "99789456549",
+      "cities": [
+        {
+          "state": "SP",
+          "city": "São Paulo"
+        },
+        {
+          "state": "RJ",
+          "city": "Parati"
+        }
+      ],
+      "occupation_areas": [
+        "Trabalhador",
+        "Jogador de Futebol",
+        "Policia"
+      ],
+      "is_active": true,
+      "id": 4
+    },
+    {
+      "userId": 6,
+      "summary": "Sou um espião. Não conta pra ninguém.",
+      "whatsapp": "11234569874",
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Itajubá"
+        },
+        {
+          "state": "MG",
+          "city": "Pariscida"
+        }
+      ],
+      "occupation_areas": [
+        "Espião",
+        "Fofo",
+        "Heroi"
+      ],
+      "is_active": true,
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "summary": "al infinito y más allá",
+      "whatsapp": "00999999999",
+      "cities": [
+        {
+          "state": "AC",
+          "city": "Acrelândia"
+        }
+      ],
+      "occupation_areas": [
+        "Astronauta",
+        "Brinquedo",
+        "Ator"
+      ],
+      "is_active": true,
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "summary": "",
+      "whatsapp": "45123659874",
+      "cities": [
+        {
+          "state": "MT",
+          "city": "Araguaiana"
+        }
+      ],
+      "occupation_areas": [
+        "Cozinheiro",
+        "Entretenimento"
+      ],
+      "is_active": true,
+      "id": 7
+    },
+    {
+      "userId": 9,
+      "summary": "Reparos em carros e motos",
+      "whatsapp": "35999445697",
+      "cities": [
+        {
+          "state": "RO",
+          "city": "Cabixi"
+        },
+        {
+          "state": "RO",
+          "city": "Ariquemes"
+        },
+        {
+          "state": "RO",
+          "city": "Cacoal"
+        }
+      ],
+      "occupation_areas": [
+        "Mecânico",
+        "Eletricista (de carros)"
+      ],
+      "is_active": true,
+      "id": 8
+    },
+    {
+      "userId": 10,
+      "summary": "Desenvolvedor full stack e estudante de rocket science",
+      "whatsapp": "19920032333",
+      "cities": [
+        {
+          "state": "SP",
+          "city": "Limeira"
+        },
+        {
+          "state": "SP",
+          "city": "Piracicaba"
+        },
+        {
+          "state": "SP",
+          "city": "Americana"
+        }
+      ],
+      "occupation_areas": [
+        "Programador",
+        "Cientista",
+        "Astronauta",
+        "Designer"
+      ],
+      "is_active": true,
+      "id": 9
+    },
+    {
+      "userId": 11,
+      "summary": "Assisto geral e sirvo pedreiro",
+      "whatsapp": "31998403490",
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Igarapé"
+        }
+      ],
+      "occupation_areas": [
+        "Assistente Geral",
+        "Servente de Pedreiro"
+      ],
+      "is_active": true,
+      "id": 10
+    },
+    {
+      "userId": 12,
+      "summary": "Colher e plantar, essas são as minhas especialidades",
+      "whatsapp": "31998403490",
+      "cities": [
+        {
+          "state": "MG",
+          "city": "Igarapé"
+        }
+      ],
+      "occupation_areas": [
+        "Jardineiro",
+        "Agricultor"
+      ],
+      "is_active": true,
+      "id": 11
+    },
+    {
+      "userId": 13,
+      "summary": "Atuo em peças profissionais e amadoras utilizo qualquer pronome, faço festas infantis e animações em geral",
+      "whatsapp": "31998403490",
+      "cities": [
+        {
+          "state": "SP",
+          "city": "São Paulo"
+        },
+        {
+          "state": "RJ",
+          "city": "Rio de Janeiro"
+        }
+      ],
+      "occupation_areas": [
+        "Ator",
+        "Ando de Mono Ciclo",
+        "Compositor",
+        "Cantor",
+        "Professor de Teatro",
+        "Coach",
+        "Comediante"
+      ],
+      "is_active": true,
+      "id": 12
+    },
+    {
+      "userId": 14,
+      "summary": "Sou músico há 20 anos toco em barzinhos do sertanejo raíz ao funk, voz e violão",
+      "whatsapp": "31998403490",
+      "cities": [
+        {
+          "state": "AC",
+          "city": "Acrelândia"
+        },
+        {
+          "state": "BA",
+          "city": "Salvador"
+        }
+      ],
+      "occupation_areas": [
+        "Cantor",
+        "Músico"
+      ],
+      "is_active": true,
+      "id": 13
+    },
+    {
+      "userId": 15,
+      "summary": "Programar é viver, sou especialiasta em programação front-end",
+      "whatsapp": "52998563289",
+      "cities": [
+        {
+          "state": "TO",
+          "city": "Almas"
+        }
+      ],
+      "occupation_areas": [
+        "Programação Web"
+      ],
+      "is_active": true,
+      "id": 14
+    },
+    {
+      "userId": 16,
+      "summary": "Uma casa limpa é uma vida limpa",
+      "whatsapp": "61998566235",
+      "cities": [
+        {
+          "state": "PI",
+          "city": "Altos"
+        }
+      ],
+      "occupation_areas": [
+        "Doméstica",
+        "Diarista"
+      ],
+      "is_active": true,
+      "id": 15
+    },
+    {
+      "userId": 17,
+      "summary": "Concertar, montar e viver",
+      "whatsapp": "68985685425",
+      "cities": [
+        {
+          "state": "BA",
+          "city": "Água Fria"
+        }
+      ],
+      "occupation_areas": [
+        "Marceneiro",
+        "Montador de Móveis"
+      ],
+      "is_active": true,
+      "id": 16
+    },
+    {
+      "userId": 18,
+      "summary": "Faço todos os tipos de trabalho relacionados a gráfica, para impressão ou midia digital",
+      "whatsapp": "27971458598",
+      "cities": [
+        {
+          "state": "SP",
+          "city": "Brotas"
+        }
+      ],
+      "occupation_areas": [
+        "Design Gráfico"
+      ],
+      "is_active": true,
+      "id": 17
+    },
+    {
+      "userId": 19,
+      "summary": "Quem ajuda sempre é ajudado",
+      "whatsapp": "61986569848",
+      "cities": [
+        {
+          "state": "DF",
+          "city": "Brasília"
+        }
+      ],
+      "occupation_areas": [
+        "Ajudante de serviços gerais"
+      ],
+      "is_active": true,
+      "id": 18
     }
   ],
   "ratings": [
