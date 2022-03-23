@@ -61,7 +61,6 @@ Retorna todos os usuários cadastrados. Não requer um corpo de requisição.
 		"password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
 		"name": "Kenzinho",
 		"id": 1,
-		"is_worker": true,
 		"is_active": true,
 		"is_admin": false
 	},
@@ -69,7 +68,6 @@ Retorna todos os usuários cadastrados. Não requer um corpo de requisição.
 		"email": "cavalo@cavalo.com.com.com.com",
 		"password": "$2a$10$HZT36TpM/cyQ5.OROcjUe.0flTLoulBHUb0gKwBAaH1VzgDNgxTF6",
 		"name": "Cavalo",
-		"is_worker": true,
 		"is_active": true,
 		"is_admin": false,
 		"id": 2
@@ -78,7 +76,6 @@ Retorna todos os usuários cadastrados. Não requer um corpo de requisição.
 		"email": "user@user.user",
 		"password": "$2a$10$BE992NyAfUkwQ28bx4l.P.SddNX.1BG8DlAwyeMno2qcSo1sBU.hK",
 		"name": "User",
-		"is_worker": false,
 		"is_active": true,
 		"is_admin": false,
 		"id": 3
@@ -100,7 +97,6 @@ Retorna um único usuário de acordo com o id. Não requer um corpo de requisiç
 	"password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
 	"name": "Kenzinho",
 	"id": 1,
-	"is_worker": true,
 	"is_active": true,
 	"is_admin": false
 }
@@ -118,16 +114,34 @@ Retorna todos os prestadores de serviço cadastrados. Não requer um corpo de re
 [
 	{
 		"userId": 1,
-		"occupation_area": "soldador",
+		"occupation_areas": [
+			"soldador"
+		],
+		"cities": [
+			{
+				"state": "MG",
+				"city": "Piranguinho"
+			}
+		],
 		"summary": "soldo coisas, mas nunca fui soldado",
 		"whatsapp": "(31) 99944-5697",
+		"is_active": true,
 		"id": 1
 	},
 	{
 		"userId": 2,
-		"occupation_area": "odontologia",
+		"occupation_areas": [
+			"odontologia"
+		],
+		"cities": [
+			{
+				"state": "MG",
+				"city": "Piranguinho"
+			}
+		],
 		"summary": "bucéfalo de oferendas não perquires formação odôntica",
 		"whatsapp": "(99) 12345-6789",
+		"is_active": true,
 		"id": 2
 	}
 ]
@@ -143,9 +157,18 @@ Retorna um único prestador de serviço de acordo com o id. Não requer um corpo
 ```json
 {
 	"userId": 1,
-	"occupation_area": "soldador",
+	"occupation_areas": [
+		"soldador"
+	],
+	"cities": [
+		{
+			"state": "MG",
+			"city": "Piranguinho"
+		}
+	],
 	"summary": "soldo coisas, mas nunca fui soldado",
 	"whatsapp": "(31) 99944-5697",
+	"is_active": true,
 	"id": 1
 }
 ```
@@ -162,31 +185,47 @@ Retorna um array com todos os prestadore de serviço, incluindo suas informaçõ
 [
 	{
 		"userId": 1,
-		"occupation_area": "soldador",
+		"occupation_areas": [
+			"soldador"
+		],
+		"cities": [
+			{
+				"state": "MG",
+				"city": "Piranguinho"
+			}
+		],
 		"summary": "soldo coisas, mas nunca fui soldado",
 		"whatsapp": "(31) 99944-5697",
+		"is_active": true,
 		"id": 1,
 		"user": {
 			"email": "kenzinho@mail.com",
 			"password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
 			"name": "Kenzinho",
 			"id": 1,
-			"is_worker": true,
 			"is_active": true,
 			"is_admin": false
 		}
 	},
 	{
 		"userId": 2,
-		"occupation_area": "odontologia",
+		"occupation_areas": [
+			"odontologia"
+		],
+		"cities": [
+			{
+				"state": "MG",
+				"city": "Piranguinho"
+			}
+		],
 		"summary": "bucéfalo de oferendas não perquires formação odôntica",
 		"whatsapp": "(99) 12345-6789",
+		"is_active": true,
 		"id": 2,
 		"user": {
 			"email": "cavalo@cavalo.com.com.com.com.com",
 			"password": "$2a$10$HZT36TpM/cyQ5.OROcjUe.0flTLoulBHUb0gKwBAaH1VzgDNgxTF6",
 			"name": "Cavalo",
-			"is_worker": true,
 			"is_active": true,
 			"is_admin": false,
 			"id": 2
@@ -206,7 +245,6 @@ Cadastra um novo **usuário**. Requer um corpo de requisição em formato `JSON`
 	"email": "user@user.user",
 	"password": "147258",
 	"name": "User",
-	"is_worker": false,
 	"is_active": true,
 	"is_admin": false
 }
@@ -222,7 +260,6 @@ Cadastra um novo **usuário**. Requer um corpo de requisição em formato `JSON`
 	"user": {
 		"email": "user@user.user",
 		"name": "User",
-		"is_worker": false,
 		"is_active": true,
 		"is_admin": false,
 		"id": 3
@@ -253,7 +290,6 @@ Loga um **usuário** na aplicação. Requer um corpo de requisição em formato 
 	"user": {
 		"email": "cavalo@cavalo.com.com.com.com.com",
 		"name": "Cavalo",
-		"is_worker": true,
 		"is_active": true,
 		"is_admin": false,
 		"id": 2
@@ -306,6 +342,40 @@ Essa requisição pode ser usada para verificar se um usuário já fez algum rat
 As duas requisições acima retornam um array, no mesmo formato já demonstrado.
 
 
+### **`GET /feedbacks`**
+
+Retorna um array de objetos, com todos os feedbacks. Não exige corpo de requisição.
+
+### ***Response***
+
+### **200 OK**
+
+```json
+[
+	{
+		"id": 1,
+		"userId": 2,
+		"workerId": 3,
+		"content": "deu choque no meu sistema"
+	},
+	{
+		"userId": 1,
+		"workerId": 3,
+		"content": "Deu choque no meu sistema também",
+		"id": 2
+	}
+]
+```
+
+### **`GET /feedbacks?_expand=user`**
+
+Essa requisição adiciona uma chave `user` na resposta, tornando fácil saber as informações de quem *fez* o feedback.
+
+### **`GET /feedbacks?_expand=user&_expand=worker`**
+
+Essa requisição faz o mesmo da mencionada acima, com o adicional de colocar uma chave `worker` na resposta, tornando mais fácil saber as informações de quem *recebeu* o feedback.
+
+
 -----------------------------------
 
 ## **Private Endpoints (Requer token de autorização)**
@@ -319,9 +389,11 @@ Cadastra um novo prestador de serviço. É necessário autenticação pois esse 
 ```json
 {
 	"userId": 2,
-	"occupation_area": "odontologia",
+	"occupation_areas": ["odontologia"],
 	"summary": "bucéfalo de oferendas não perquires formação odôntica",
-	"whatsapp": "(99) 12345-6789"
+	"whatsapp": "(99) 12345-6789",
+	"cities": [{"state": "MG", "city": "Piranguinho"}],
+	"is_active": true
 }
 ```
 
@@ -332,9 +404,11 @@ Cadastra um novo prestador de serviço. É necessário autenticação pois esse 
 ```json
 {
 	"userId": 2,
-	"occupation_area": "odontologia",
+	"occupation_areas": ["odontologia"],
 	"summary": "bucéfalo de oferendas não perquires formação odôntica",
 	"whatsapp": "(99) 12345-6789",
+	"cities": [{"state": "MG", "city": "Piranguinho"}],
+	"is_active": true,
 	"id": 2
 }
 ```
@@ -348,7 +422,7 @@ Atualiza um ou mais campos de um prestador de serviço. O corpo da requisição 
 ```json
 {
 	"userId": 1,
-	"whatsapp": "(31) 99944-5697"
+	"whatsapp": "(31)99944-5697"
 }
 ```
 
@@ -360,9 +434,18 @@ Atualiza um ou mais campos de um prestador de serviço. O corpo da requisição 
 ```json
 {
 	"userId": 1,
-	"occupation_area": "soldador",
+	"occupation_areas": [
+		"soldador"
+	],
+	"cities": [
+		{
+			"state": "MG",
+			"city": "Piranguinho"
+		}
+	],
 	"summary": "soldo coisas, mas nunca fui soldado",
-	"whatsapp": "(31) 99944-5697",
+	"whatsapp": "(31)99944-5697",
+	"is_active": true,
 	"id": 1
 }
 ```
@@ -388,7 +471,6 @@ Atualiza um ou mais campos de um usuário. O corpo da requisição deve estar no
 	"email": "cavalo@cavalo.com.com.com.com.com",
 	"password": "$2a$10$HZT36TpM/cyQ5.OROcjUe.0flTLoulBHUb0gKwBAaH1VzgDNgxTF6",
 	"name": "Cavalo",
-	"is_worker": true,
 	"is_active": true,
 	"is_admin": false,
 	"id": 2
@@ -445,5 +527,58 @@ Atualiza um rating. Esta rota é útil quando um usuário já deu uma nota (fez 
 	"workerId": 2,
 	"userId": 4,
 	"id": 3
+}
+```
+
+### **`POST /feedbacks`**
+
+Cria um novo feedback, guardando referências sobre quem *deu* o feedback (`userId`) e sobre quem *recebeu* o feedback (`workerId`). Corpo da quisição deve estar em formato `JSON`, obrigatóriamente passando um `workerId` e um `userId`.
+
+### ***Request***
+
+```json
+{
+	"userId": 1,
+	"workerId": 3,
+	"content": "Deu choque no meu sistema"
+}
+```
+
+### ***Response***
+
+### **201 Created**
+
+```json
+{
+	"userId": 1,
+	"workerId": 3,
+	"content": "Deu choque no meu sistema",
+	"id": 2
+}
+```
+
+### **`PATCH /feedbacks/:id`**
+
+Atualiza um feedback. O corpo da requisição também deve estar em formato `JSON`, e obrigatóriamente passar um `userId`. Também é obrigatório passar o **id do feedback** na url (ex: `feedbacks/2`).
+
+### ***Request***
+
+```json
+{
+	"userId": 1,
+	"content": "Deu choque no meu sistema também"
+}
+```
+
+### ***Response***
+
+### **200 OK**
+
+```json
+{
+	"userId": 1,
+	"workerId": 3,
+	"content": "Deu choque no meu sistema também",
+	"id": 2
 }
 ```
