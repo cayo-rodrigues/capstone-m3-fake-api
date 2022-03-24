@@ -148,10 +148,7 @@
           "city": "Cacoal"
         }
       ],
-      "occupation_areas": [
-        "Mecânico",
-        "Eletricista (de carros)"
-      ],
+      "occupation_areas": ["Mecânico", "Eletricista (de carros)"],
       "is_active": true,
       "id": 8
     },
@@ -165,10 +162,7 @@
           "city": "Igarapé"
         }
       ],
-      "occupation_areas": [
-        "Assistente Geral",
-        "Servente de Pedreiro"
-      ],
+      "occupation_areas": ["Assistente Geral", "Servente de Pedreiro"],
       "is_active": true,
       "id": 10
     },
@@ -182,10 +176,7 @@
           "city": "Igarapé"
         }
       ],
-      "occupation_areas": [
-        "Jardineiro",
-        "Agricultor"
-      ],
+      "occupation_areas": ["Jardineiro", "Agricultor"],
       "is_active": true,
       "id": 11
     },
@@ -229,10 +220,7 @@
           "city": "Salvador"
         }
       ],
-      "occupation_areas": [
-        "Cantor",
-        "Músico"
-      ],
+      "occupation_areas": ["Cantor", "Músico"],
       "is_active": true,
       "id": 13
     },
@@ -246,9 +234,7 @@
           "city": "Almas"
         }
       ],
-      "occupation_areas": [
-        "Programação Web"
-      ],
+      "occupation_areas": ["Programação Web"],
       "is_active": true,
       "id": 14
     },
@@ -262,10 +248,7 @@
           "city": "Altos"
         }
       ],
-      "occupation_areas": [
-        "Doméstica",
-        "Diarista"
-      ],
+      "occupation_areas": ["Doméstica", "Diarista"],
       "is_active": true,
       "id": 15
     },
@@ -279,10 +262,7 @@
           "city": "Água Fria"
         }
       ],
-      "occupation_areas": [
-        "Marceneiro",
-        "Montador de Móveis"
-      ],
+      "occupation_areas": ["Marceneiro", "Montador de Móveis"],
       "is_active": true,
       "id": 16
     },
@@ -296,9 +276,7 @@
           "city": "Brotas"
         }
       ],
-      "occupation_areas": [
-        "Design Gráfico"
-      ],
+      "occupation_areas": ["Design Gráfico"],
       "is_active": true,
       "id": 17
     },
@@ -312,9 +290,7 @@
           "city": "Brasília"
         }
       ],
-      "occupation_areas": [
-        "Ajudante de serviços gerais"
-      ],
+      "occupation_areas": ["Ajudante de serviços gerais"],
       "is_active": true,
       "id": 18
     },
@@ -417,7 +393,7 @@
       "id": 11
     },
     {
-      "stars": 4,
+      "stars": 3.5,
       "workerId": 8,
       "userId": 9,
       "id": 12
