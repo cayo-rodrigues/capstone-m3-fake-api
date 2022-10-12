@@ -4,7 +4,7 @@ Esse projeto é uma API Fake, criada usando as bibliotecas `json-server` e `json
 
 Segue o link para o repositório da parte front do projeto, desenvolvida em `React`:
 
-https://github.com/cayo-rodrigues/capstone-m3
+https://github.com/cayo-rodrigues/proworking
 
 Essa API é usada para guardar informações sobre usuários e prestadores de serviços que se registram em nosso site.
 
@@ -40,7 +40,7 @@ Se estiver usando o `Insomnia`, lembre-se de que as aspas não fazem parte do `t
 
 ## URL Base
 
-### https://proworking-fake-api.herokuapp.com
+### https://proworking-api.onrender.com/
 
 ------------------------
 
