@@ -1,4 +1,4 @@
-# capstone-m3-fake-api
+# Proworking Fake API
 
 Esse projeto é uma API Fake, criada usando as bibliotecas `json-server` e `json-server-auth`. Seu objetivo é suprir nossa carência por um servidor backend de maneira rápida e fácil, já que **o foco do projeto que irá consumi-la é front-end**.
 
